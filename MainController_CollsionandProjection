@@ -10,7 +10,7 @@ using UnityEngine.EventSystems;
 
 public class MainController_CollisionandProjection : MonoBehaviour {
     public GameObject travelerPrefab;
-    GameObject traveller;
+    GameObject traveler;
 
     GameObject endPointRight, endPointLeft;
     GameObject aimLine;
@@ -40,9 +40,9 @@ public class MainController_CollisionandProjection : MonoBehaviour {
 
         if(time > interval + 1f)
         {
-            traveller = Instantiate(travelerPrefab);
-            traveller.GetComponent<Traveler>().timeAlive = lifespan;
-            traveller.GetComponent<Traveler>().speed = speed;
+            traveler = Instantiate(travelerPrefab);
+            traveler.GetComponent<Traveler>().timeAlive = lifespan;
+            traveler.GetComponent<Traveler>().speed = speed;
             time = 1;
         }
 
